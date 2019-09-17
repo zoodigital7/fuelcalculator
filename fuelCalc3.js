@@ -7,6 +7,7 @@ $(document).ready(function () {
     });
 
 });
+
 function InitAll() {
     $('table tr:odd').addClass("alt")
 
@@ -80,6 +81,7 @@ function InitDrag() {
         });
     });
 }
+
 function adjustVal(obj, sign) {
     var $txtNum = $(obj).parent().next('input');
     adjustThisVal($txtNum, sign)
@@ -114,12 +116,8 @@ function commaSeparateNumber(val) {
 }
 
 var ozToGallon = Number(0.0078125000001);
-//length of this string below is dependent on how many products are listed in the html table. If a new product is added the string needs lengthened and the numbers in the fuel calculations should also be changed. 
 var fuelConsumption = [48.7, 49, 52.7, 60.2, 60.9, 51.4, 43.3];
 var fuelConsumption2 = [48.7, 49, 52.7, 60.2, 60.9, 51.4, 42.6];
-//var fuelConsumption = [51.9, 52.4, 52.6, 59.4, 59.8, 43.2];
-//var fuelConsumption = [.41, .41, .41, .46, .47, .34];
-//var OilCostPerGallon = 1.10;
 var OilCostPerGallon = 1.65;
 
 function calculate() {
